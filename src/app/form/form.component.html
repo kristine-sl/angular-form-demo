@@ -1,0 +1,21 @@
+<mat-card class="card">
+  <form [formGroup]="formGroup" fxLayoutAlign="start stretch">
+    <mat-form-field>
+      <input matInput formControlName="name" placeholder="Name">
+    </mat-form-field>
+  </form>
+
+  <form [formGroup]="formGroup" fxLayoutAlign="start stretch">
+    <mat-form-field>
+      <input matInput formControlName="age" placeholder="Age" type="number">
+    </mat-form-field>
+  </form>
+
+  <form [formGroup]="formGroup" fxLayoutAlign="start stretch">
+    <mat-form-field>
+      <textarea matInput formControlName="description" placeholder="Description"></textarea>
+    </mat-form-field>
+  </form>
+
+  <button mat-raised-button color="accent" (click)="submit()">Submit</button>
+</mat-card>
